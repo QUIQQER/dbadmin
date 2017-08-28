@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locales>
+  <groups name="quiqqer/dbadmin" datatype="php,js">
+    <locale name="package.title">
+      <de><![CDATA[Datenbank Verwaltung]]></de>
+      <en><![CDATA[Database management]]></en>
+    </locale>
+  <locale name="package.description"><de><![CDATA[Ermöglicht das schnelle editieren der Datenbank Tabellen.]]></de><en><![CDATA[Allows quick and easy editing of the database tables.]]></en></locale></groups>
+</locales>
