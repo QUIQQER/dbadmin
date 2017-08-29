@@ -12,6 +12,10 @@ if (isset($_REQUEST['lang'])) {
     QUI::getLocale()->setCurrent($language);
 }
 
+if(QUI::getUserBySession()->getLang() != ""){
+    QUI::getLocale()->setCurrent(QUI::getUserBySession()->getLang());
+}
+
 
 if (!QUI::getUserBySession()->getId()) {
     echo QUI::getLocale()->get("quiqqer/dbadmin", "exception.no.permission");

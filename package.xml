@@ -5,21 +5,18 @@
         </title>
 
         <description>
-           <locale group='quiqqer/dbadmin' var='package.description'/>
+            <locale group='quiqqer/dbadmin' var='package.description'/>
         </description>
 
         <!-- Hauptbild -->
-        <image src='URL_OPT_DIR/quiqqer/dbadmin/bin/quiqqer_logo.png'/>
+        <image src='URL_OPT_DIR/quiqqer/dbadmin/bin/img/preview.png'/>
 
-         <!-- More preview images
+
         <preview>
-            <image src="URL_OPT_DIR/quiqqer/quiqqer/bin/preview/1.png"/>
-            <image src="URL_OPT_DIR/quiqqer/quiqqer/bin/preview/2.png"/>
-            <image src="URL_OPT_DIR/quiqqer/quiqqer/bin/preview/3.png"/>
-            <image src="URL_OPT_DIR/quiqqer/quiqqer/bin/preview/4.png"/>
-            <image src="URL_OPT_DIR/quiqqer/quiqqer/bin/preview/5.png"/>
+            <image src='URL_OPT_DIR/quiqqer/dbadmin/bin/img/1.png'/>
+            <image src='URL_OPT_DIR/quiqqer/dbadmin/bin/img/2.png'/>
+            <image src='URL_OPT_DIR/quiqqer/dbadmin/bin/img/3.png'/>
         </preview>
-        -->
-
+        
     </package>
 </quiqqer>
