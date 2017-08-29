@@ -10,6 +10,13 @@ require_once dirname(dirname(dirname(dirname(dirname(__FILE__))))) . "/bootstrap
 $language = $_REQUEST['lang'];
 QUI::getLocale()->setCurrent($language);
 
+
+if (!QUI::getUserBySession()->getId()) {
+    echo QUI::getLocale()->get("quiqqer/dbadmin", "exception.no.permission");
+
+    exit;
+}
+
 try {
     /** @var \QUI\Users\User $CurrentQUIUser */
     $CurrentQUIUser = QUI::getUserBySession();
