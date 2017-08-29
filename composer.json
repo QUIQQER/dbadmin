@@ -21,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "QUI\\DBAdmin": "src/QUI/DBAdmin"
+      "QUI\\DBAdmin\\": "src/QUI/DBAdmin"
     }
   }
 }
