@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <item parent="/apps/"
+          name="dbadmin"
+          require="package/quiqqer/dbadmin/bin/backend/panel/DBAdmin"
+          icon="fa fa-database"
+    >
+        <locale group="quiqqer/dbadmin" var="panel.title"/>
+    </item>
+
+</menu>

@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <locales>
-  <groups name="quiqqer/dbadmin" datatype="php,js">
-    <locale name="package.title">
-      <de><![CDATA[Datenbank Verwaltung]]></de>
-      <en><![CDATA[Database management]]></en>
-    </locale>
-  <locale name="package.description"><de><![CDATA[Ermöglicht das schnelle editieren der Datenbank Tabellen.]]></de><en><![CDATA[Allows quick and easy editing of the database tables.]]></en></locale></groups>
+    <groups name="quiqqer/dbadmin" datatype="php,js">
+        <locale name="package.title">
+            <de><![CDATA[Datenbank Verwaltung]]></de>
+            <en><![CDATA[Database management]]></en>
+        </locale>
+        <locale name="package.description">
+            <de><![CDATA[Ermöglicht das schnelle editieren der Datenbank Tabellen.]]></de>
+            <en><![CDATA[Allows quick and easy editing of the database tables.]]></en>
+        </locale>
+        <locale name="panel.title">
+            <de><![CDATA[Datenbank Verwaltung]]></de>
+            <en><![CDATA[Database management]]></en>
+        </locale>
+
+
+        <locale name="permission.quiqqer.dbadmin._header">
+            <de><![CDATA[Datenbank Verwaltung]]></de>
+            <en><![CDATA[Database management]]></en>
+        </locale>
+        <locale name="permission.quiqqer.dbadmin.access">
+            <de><![CDATA[Zugriff]]></de>
+            <en><![CDATA[Access]]></en>
+        </locale>
+        <locale name="adminer.title">
+            <de><![CDATA[QUIQQER Datenbank Verwaltung]]></de>
+            <en><![CDATA[QUIQQER database management]]></en>
+        </locale>
+        <locale name="exception.no.permission">
+            <de><![CDATA[Sie haben keinen Zugriff auf diesen Bereich.]]></de>
+            <en><![CDATA[You do not have access to this area.]]></en>
+        </locale>
+    </groups>
 </locales>
