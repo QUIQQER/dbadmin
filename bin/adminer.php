@@ -7,8 +7,10 @@ if (!defined("QUIQQER_SYSTEM")) {
 require_once dirname(dirname(dirname(dirname(dirname(__FILE__))))) . "/bootstrap.php";
 
 
-$language = $_REQUEST['lang'];
-QUI::getLocale()->setCurrent($language);
+if (isset($_REQUEST['lang'])) {
+    $language = $_REQUEST['lang'];
+    QUI::getLocale()->setCurrent($language);
+}
 
 
 if (!QUI::getUserBySession()->getId()) {
