@@ -6,8 +6,22 @@
             <en><![CDATA[Database management]]></en>
         </locale>
         <locale name="package.description">
-            <de><![CDATA[Ermöglicht das schnelle editieren der Datenbank Tabellen.]]></de>
-            <en><![CDATA[Allows quick and easy editing of the database tables.]]></en>
+            <de><![CDATA[Ermöglicht das schnelle editieren der Datenbank Tabellen direkt in der QUIQQER Administrations Oberfläche.
+
+Folgende Features werden bereits unterstützt:
+* Eine neue App zum bearbeiten von Tabellen wird in das Menü integriert
+* Das Modul verbindet sich automatisch mit der konfigurierten Datenbank
+
+Editieren Sie schnell und einfach ihre Daten direkt in QUIQQER.
+Sparen Sie sich den mühsamen Login in der Konsole oder externen Editoren wie 'PhpMyAdmin'.
+]]></de>
+            <en><![CDATA[Allows quick and easy editing of the database tables.
+
+Features that are currently supported:
+* A new has been added, which can edit the database tables
+* The module will automatically connect to the configured database.
+
+Edit your database tables quick and easy and avoid logging in into external tools like 'PhpMyAdmin']]></en>
         </locale>
         <locale name="panel.title">
             <de><![CDATA[Datenbank Verwaltung]]></de>
