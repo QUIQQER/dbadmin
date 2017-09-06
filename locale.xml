@@ -6,6 +6,10 @@
             <en><![CDATA[Database management]]></en>
         </locale>
         <locale name="package.description">
+        <de><![CDATA[Erweitert QUIQQER um eine Datenbank-Verwaltung]]></de>
+        <en><![CDATA[Extend QUIQQER with a database management]]></en>
+        </locale>
+        <locale name="package.description.long">
             <de><![CDATA[Ermöglicht das schnelle editieren der Datenbank Tabellen direkt in der QUIQQER Administrations Oberfläche.
 
 Folgende Features werden bereits unterstützt:
