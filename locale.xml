@@ -2,8 +2,8 @@
 <locales>
     <groups name="quiqqer/dbadmin" datatype="php,js">
         <locale name="package.title">
-            <de><![CDATA[Datenbank Verwaltung]]></de>
-            <en><![CDATA[Database management]]></en>
+            <de><![CDATA[QUIQQER - Datenbank Verwaltung]]></de>
+            <en><![CDATA[QUIQQER - DataBase Administration]]></en>
         </locale>
         <locale name="package.description">
         <de><![CDATA[Erweitert QUIQQER um eine Datenbank-Verwaltung]]></de>
