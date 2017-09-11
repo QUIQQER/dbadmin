@@ -45,5 +45,15 @@ Edit your database tables quick and easy and avoid logging in into external tool
             <de><![CDATA[Sie haben keinen Zugriff auf diesen Bereich.]]></de>
             <en><![CDATA[You do not have access to this area.]]></en>
         </locale>
+        <locale name="settings.dbadmin.databases.title">
+            <de><![CDATA[Zusätzliche Datenbanken]]></de>
+            <en><![CDATA[Additional databases]]></en>
+        </locale>
+        <locale name="settings.dbadmin.databases.desc">
+            <de>
+                <![CDATA[Komma-separierte Liste von Datenbanken, die zusätzlich zur hauptdatenbank zur Bearbeitung zur Verfügung stehen sollen.]]></de>
+            <en>
+                <![CDATA[Comma-separated list of databases, which should be editable in addition to the main database.]]></en>
+        </locale>
     </groups>
 </locales>

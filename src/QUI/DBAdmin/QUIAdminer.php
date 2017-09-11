@@ -22,7 +22,7 @@ class QUIAdminer extends \AdminerPlugin
 
     function permanentLogin($create = false)
     {
-        return false; //"Zx4GNNsW0UoZaQpSpyywyUz6TGDJSxPCqLR99VkG";
+        return false; 
     }
 
     /**
@@ -61,14 +61,11 @@ class QUIAdminer extends \AdminerPlugin
         return parent::tablesPrint($tables);
     }
 
-    /**
-     * Returns the currently selected database
-     *
-     * @return mixed
-     */
     function database()
     {
-        return \QUI::conf("db", "database");
+        $result = parent::database();
+        
+        return $result;
     }
 
     /**
@@ -80,8 +77,19 @@ class QUIAdminer extends \AdminerPlugin
      */
     function databases($sc = true)
     {
-        return [\QUI::conf("db", "database")];
+        $databases = Utils::getAdditionalDatabases();
+
+        $databases = explode(",", $databases);
+
+        $databases[] = \QUI::conf("db", "database");
+        
+        $databases = array_unique($databases);
+            
+        return $databases;
     }
+
+    
+
 
     /**
      * Disables the login form completely

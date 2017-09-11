@@ -67,13 +67,39 @@ define('package/quiqqer/dbadmin/bin/backend/panel/DBAdmin', [
             var lang = window.USER.lang;
 
             var Iframe = new Element('iframe', {
-                src     : URL_OPT_DIR + "/quiqqer/dbadmin/bin/adminer.php?username=&db=&lang=" + lang,
+                src     : URL_OPT_DIR + "/quiqqer/dbadmin/bin/adminer.php?username=&lang=" + lang,
                 seamless: true,
                 height  : "100%",
                 width   : "100%",
                 'class' : "dbadmin-iframe"
             });
             Iframe.inject(Content);
+
+            Iframe.addEvent("load", function () {
+                var IframeContent = Iframe.contentDocument || Iframe.contentWindow.document;
+                
+                var FA = new Element("link", {
+                    href: URL_OPT_DIR + "bin/font-awesome/css/font-awesome.css",
+                    rel : "stylesheet",
+                    type: "text/css"
+                });
+                FA.inject(IframeContent.getElementsByTagName("head")[0]);
+
+
+                var SelectButtons = IframeContent.getElementsByClassName("select");
+
+                for (var i in SelectButtons) {
+                    if (!SelectButtons.hasOwnProperty(i)) {
+                        continue;
+                    }
+
+                    var SelectItem       = SelectButtons[i];
+                    var oldHtml          = SelectItem.innerHTML;
+                    SelectItem.innerHTML = "<span class='fa fa-eye' title='" + oldHtml + "'></span>";
+                }
+
+
+            });
         }
 
     });

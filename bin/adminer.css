@@ -298,9 +298,12 @@ input.wayoff {
 }
 
 .links a {
+
     margin-right : 20px;
     white-space  : nowrap;
 }
+
+
 
 .logout {
     margin-top : .5em;
@@ -314,12 +317,12 @@ input.wayoff {
 }
 
 #menu {
-    left     : 0;
-    margin   : 10px 0 0;
-    padding  : 0 0 30px 0;
-    position : absolute;
-    top      : 2em;
-    width    : 19em;
+    left      : 0;
+    margin    : 10px 0 0;
+    padding   : 0 0 30px 0;
+    position  : absolute;
+    top       : 2em;
+    width     : 19em;
 }
 
 #menu p, #tables {
@@ -360,6 +363,7 @@ input.wayoff {
 
 #breadcrumb {
     background  : #eee;
+    height      : 35px;
     left        : 21em;
     line-height : 1.8em;
     margin      : 0 0 0 -18px;
@@ -367,8 +371,7 @@ input.wayoff {
     position    : absolute;
     top         : 0;
     white-space : nowrap;
-    width: 100%;
-    height: 35px;
+    width       : 100%;
 }
 
 #h1 {

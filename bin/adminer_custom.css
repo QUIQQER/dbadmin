@@ -1,1 +1,15 @@
 /* This file can be used to customize the adminer skin */
+#menu .links a {
+    display   : block;
+    font-size : 80%;
+    padding   : 1px 0;
+    width     : 100%;
+}
+
+#menu {
+    font-size : 90%;
+}
+
+p#dbs {
+    /*display : none;*/
+}
