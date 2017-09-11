@@ -17,6 +17,19 @@
             <image src='URL_OPT_DIR/quiqqer/dbadmin/bin/img/2.png'/>
             <image src='URL_OPT_DIR/quiqqer/dbadmin/bin/img/3.png'/>
         </preview>
+
+        <support>
+            <email>support@pcsg.de</email>
+            <forum>https://community.quiqqer.com</forum>
+            <source>https://dev.quiqqer.com/quiqqer/dbadmin</source>
+            <issues>https://dev.quiqqer.com/quiqqer/dbadmin/issues</issues>
+            <wiki>https://dev.quiqqer.com/quiqqer/dbadmin/wikis/home</wiki>
+        </support>
+
+        <copyright>
+            <name><![CDATA[PCSG - Computer & Internet Service OHG]]></name>
+            <license><![CDATA[GPL-3.0+]]></license>
+        </copyright>
         
     </package>
 </quiqqer>
