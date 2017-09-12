@@ -20,6 +20,11 @@ class QUIAdminer extends \AdminerPlugin
         return \QUI::getLocale()->get("quiqqer/dbadmin", "adminer.title");
     }
 
+    /**
+     * @param bool $create
+     *
+     * @return bool
+     */
     public function permanentLogin($create = false)
     {
         return false;
@@ -61,6 +66,9 @@ class QUIAdminer extends \AdminerPlugin
         return parent::tablesPrint($tables);
     }
 
+    /**
+     * @return mixed
+     */
     public function database()
     {
         $result = parent::database();
