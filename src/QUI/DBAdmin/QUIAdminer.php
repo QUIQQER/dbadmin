@@ -22,7 +22,7 @@ class QUIAdminer extends \AdminerPlugin
 
     function permanentLogin($create = false)
     {
-        return false; 
+        return false;
     }
 
     /**
@@ -77,9 +77,9 @@ class QUIAdminer extends \AdminerPlugin
      */
     function databases($sc = true)
     {
-        $databases = Utils::getAdditionalDatabases();
-
-        $databases = explode(",", $databases);
+        
+//        $databases = Utils::getAdditionalDatabases();
+//        $databases = explode(",", $databases);
 
         $databases[] = \QUI::conf("db", "database");
         
@@ -125,7 +125,4 @@ class QUIAdminer extends \AdminerPlugin
 
         return true;
     }
-
-
 }
-
