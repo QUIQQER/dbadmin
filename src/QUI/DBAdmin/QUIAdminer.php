@@ -14,13 +14,13 @@ class QUIAdminer extends \AdminerPlugin
      *
      * @return string
      */
-    function name()
+    public function name()
     {
         // custom name in title and heading
         return \QUI::getLocale()->get("quiqqer/dbadmin", "adminer.title");
     }
 
-    function permanentLogin($create = false)
+    public function permanentLogin($create = false)
     {
         return false;
     }
@@ -30,7 +30,7 @@ class QUIAdminer extends \AdminerPlugin
      *
      * @return array
      */
-    function credentials()
+    public function credentials()
     {
         // server, username and password for connecting to database
         return array(
@@ -47,7 +47,7 @@ class QUIAdminer extends \AdminerPlugin
      *
      * @return string
      */
-    function tablesPrint($tables)
+    public function tablesPrint($tables)
     {
         //Add Tablenames to disable them in the view
         $blacklistedTables = array();
@@ -61,10 +61,10 @@ class QUIAdminer extends \AdminerPlugin
         return parent::tablesPrint($tables);
     }
 
-    function database()
+    public function database()
     {
         $result = parent::database();
-        
+
         return $result;
     }
 
@@ -75,26 +75,24 @@ class QUIAdminer extends \AdminerPlugin
      *
      * @return array
      */
-    function databases($sc = true)
+    public function databases($sc = true)
     {
-        
+
 //        $databases = Utils::getAdditionalDatabases();
 //        $databases = explode(",", $databases);
 
         $databases[] = \QUI::conf("db", "database");
-        
+
         $databases = array_unique($databases);
-            
+
         return $databases;
     }
-
-    
 
 
     /**
      * Disables the login form completely
      */
-    function loginForm()
+    public function loginForm()
     {
         // Disable the LoginForm
         return "";
@@ -108,7 +106,7 @@ class QUIAdminer extends \AdminerPlugin
      *
      * @return bool
      */
-    function login($login, $password)
+    public function login($login, $password)
     {
         /** @var User $CurrentQUIUser */
         $CurrentQUIUser = \QUI::getUserBySession();
