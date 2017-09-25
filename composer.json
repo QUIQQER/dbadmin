@@ -2,7 +2,7 @@
   "name": "quiqqer/dbadmin",
   "type": "quiqqer-module",
   "description": "Quick admin tool to manage your database within QUIQQER",
-  "version": "dev-dev",
+  "version": "dev-master",
   "license": "GPL-3.0+",
   "authors": [
     {
