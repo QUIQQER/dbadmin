@@ -13,9 +13,10 @@
 
 
         <preview>
-            <image src='URL_OPT_DIR/quiqqer/dbadmin/bin/img/1.png'/>
-            <image src='URL_OPT_DIR/quiqqer/dbadmin/bin/img/2.png'/>
-            <image src='URL_OPT_DIR/quiqqer/dbadmin/bin/img/3.png'/>
+            <image src='URL_OPT_DIR/quiqqer/dbadmin/bin/images/preview1.png'/>
+            <image src='URL_OPT_DIR/quiqqer/dbadmin/bin/images/preview2.png'/>
+            <image src='URL_OPT_DIR/quiqqer/dbadmin/bin/images/preview3.png'/>
+            <image src='URL_OPT_DIR/quiqqer/dbadmin/bin/images/preview4.png'/>
         </preview>
 
         <support>
