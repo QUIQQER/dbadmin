@@ -1,8 +1,8 @@
 {
   "name": "quiqqer/dbadmin",
   "type": "quiqqer-module",
-  "description": "Extend QUIQQER with a database management",
-  "version": "dev-dev",
+  "description": "Quick admin tool to manage your database within QUIQQER",
+  "version": "dev-master",
   "license": "GPL-3.0+",
   "authors": [
     {
