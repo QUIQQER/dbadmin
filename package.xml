@@ -20,11 +20,11 @@
         </preview>
 
         <support>
-            <email>support@pcsg.de</email>
-            <forum>https://community.quiqqer.com</forum>
-            <source>https://dev.quiqqer.com/quiqqer/dbadmin</source>
-            <issues>https://dev.quiqqer.com/quiqqer/dbadmin/issues</issues>
-            <wiki>https://dev.quiqqer.com/quiqqer/dbadmin/wikis/home</wiki>
+            <email><![CDATA[support@pcsg.de]]></email>
+            <forum><![CDATA[https://community.quiqqer.com]]></forum>
+            <source><![CDATA[https://dev.quiqqer.com/quiqqer/dbadmin]]></source>
+            <issues><![CDATA[https://dev.quiqqer.com/quiqqer/dbadmin/issues]]></issues>
+            <wiki><![CDATA[https://dev.quiqqer.com/quiqqer/dbadmin/wikis/home]]></wiki>
         </support>
 
         <copyright>
