@@ -59,7 +59,7 @@ function adminer_object()
     return new \QUI\DBAdmin\QUIAdminer($plugins);
 }
 
-require dirname(dirname(__FILE__)) . "/lib/adminer-4.3.1-mysql.php";
+require dirname(dirname(__FILE__)) . "/lib/adminer-mysql.php";
 
 if (file_exists(OPT_DIR . "quiqqer/dbadmin/bin/adminer_custom.css")) {
     echo '<link rel="stylesheet" type="text/css" href="' . URL_OPT_DIR . 'quiqqer/dbadmin/bin/adminer_custom.css" />';
