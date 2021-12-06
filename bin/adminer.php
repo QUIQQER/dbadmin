@@ -12,7 +12,7 @@ if (isset($_REQUEST['lang'])) {
     QUI::getLocale()->setCurrent($language);
 }
 
-if(QUI::getUserBySession()->getLang() != ""){
+if (QUI::getUserBySession()->getLang() != "") {
     QUI::getLocale()->setCurrent(QUI::getUserBySession()->getLang());
 }
 
@@ -35,6 +35,16 @@ try {
 
 
 $_GET['db'] = QUI::conf("db", "database");
+$_SESSION["lang"] = QUI::getLocale()->getCurrent();
+$_SESSION["username"] = QUI::getUserBySession()->getUsername();
+
+if (isset($_POST["quiqqer-login"])) {
+    $_POST["auth"]['driver'] = 'server';
+    $_POST["auth"]['server'] = '';
+    $_POST["auth"]['username'] = \QUI::conf("db", "user");
+    $_POST["auth"]['password'] = \QUI::conf("db", "password");
+    $_POST["auth"]['db'] = \QUI::conf("db", "database");
+}
 
 /**
  * Overwrites the creation of the Adminer Object to use our custom object
@@ -51,15 +61,15 @@ function adminer_object()
         include_once $filename;
     }
 
-    $plugins = array(
+    $plugins = [
         new AdminerFrames(true)
-    );
+    ];
 
     // Return the Adminer Instance
     return new \QUI\DBAdmin\QUIAdminer($plugins);
 }
 
-require dirname(dirname(__FILE__)) . "/lib/adminer-mysql.php";
+require dirname(dirname(__FILE__)) . "/lib/adminer-4.8.1-mysql.php";
 
 if (file_exists(OPT_DIR . "quiqqer/dbadmin/bin/adminer_custom.css")) {
     echo '<link rel="stylesheet" type="text/css" href="' . URL_OPT_DIR . 'quiqqer/dbadmin/bin/adminer_custom.css" />';
