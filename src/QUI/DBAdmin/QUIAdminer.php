@@ -5,10 +5,11 @@ namespace QUI\DBAdmin;
 use QUI\System\Log;
 use QUI\Users\User;
 
+/**
+ * QUIAdminer plugin
+ */
 class QUIAdminer extends \AdminerPlugin
 {
-
-
     /**
      * Sets the name of the adminer instance
      *
@@ -38,11 +39,11 @@ class QUIAdminer extends \AdminerPlugin
     public function credentials()
     {
         // server, username and password for connecting to database
-        return array(
+        return [
             \QUI::conf("db", "host"),
             \QUI::conf("db", "user"),
             \QUI::conf("db", "password")
-        );
+        ];
     }
 
     /**
@@ -55,7 +56,7 @@ class QUIAdminer extends \AdminerPlugin
     public function tablesPrint($tables)
     {
         //Add Tablenames to disable them in the view
-        $blacklistedTables = array();
+        $blacklistedTables = [];
 
         foreach ($blacklistedTables as $tableName) {
             if (isset($tables[$tableName])) {
@@ -71,9 +72,7 @@ class QUIAdminer extends \AdminerPlugin
      */
     public function database()
     {
-        $result = parent::database();
-
-        return $result;
+        return parent::database();
     }
 
     /**
@@ -85,25 +84,26 @@ class QUIAdminer extends \AdminerPlugin
      */
     public function databases($sc = true)
     {
-
-//        $databases = Utils::getAdditionalDatabases();
-//        $databases = explode(",", $databases);
-
         $databases[] = \QUI::conf("db", "database");
-
         $databases = array_unique($databases);
 
         return $databases;
     }
-
 
     /**
      * Disables the login form completely
      */
     public function loginForm()
     {
-        // Disable the LoginForm
-        return "";
+        echo '
+        <style>[name="quiqqer-login-submit"] { visibility: hidden; }</style>
+        <input type="hidden" name="quiqqer-login" value="1" />
+        <input type="submit" name="quiqqer-login-submit" value="login" />
+        ';
+
+        echo '<script nonce="' . get_nonce() . '">
+            document.querySelector(\'[name="quiqqer-login"]\').parentNode.submit();
+        </script>';
     }
 
     /**
@@ -118,6 +118,7 @@ class QUIAdminer extends \AdminerPlugin
     {
         /** @var User $CurrentQUIUser */
         $CurrentQUIUser = \QUI::getUserBySession();
+
         if ($CurrentQUIUser->getId() == 0) {
             return false;
         }
@@ -127,7 +128,6 @@ class QUIAdminer extends \AdminerPlugin
         } catch (\Exception $Exception) {
             return false;
         }
-
 
         return true;
     }

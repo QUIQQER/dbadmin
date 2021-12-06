@@ -3,11 +3,6 @@
  *
  * @module package/quiqqer/dbadmin/bin/backend/panel/DBAdmin
  * @author www.pcsg.de (Florian Bogner)
- *
- * @require qui/QUI
- * @require qui/controls/desktop/Panel'
- * @require Ajax
- * @require Locale
  */
 define('package/quiqqer/dbadmin/bin/backend/panel/DBAdmin', [
     'qui/QUI',
@@ -15,8 +10,6 @@ define('package/quiqqer/dbadmin/bin/backend/panel/DBAdmin', [
     'Ajax',
     'Locale',
     'css!package/quiqqer/dbadmin/bin/backend/panel/DBAdmin.css'
-
-
 ], function (QUI, QUIPanel, Ajax, QUILocale) {
     "use strict";
 
@@ -59,15 +52,14 @@ define('package/quiqqer/dbadmin/bin/backend/panel/DBAdmin', [
          * Creates the ui controls within the panel.
          */
         $onCreate: function () {
-            var self    = this,
-                Content = this.getContent();
+            var Content = this.getContent();
 
             Content.style.padding = 0;
 
             var lang = window.USER.lang;
 
             var Iframe = new Element('iframe', {
-                src     : URL_OPT_DIR + "/quiqqer/dbadmin/bin/adminer.php?username=&lang=" + lang,
+                src     : URL_OPT_DIR + "/quiqqer/dbadmin/bin/adminer.php?lang=" + lang,
                 seamless: true,
                 height  : "100%",
                 width   : "100%",
@@ -77,7 +69,7 @@ define('package/quiqqer/dbadmin/bin/backend/panel/DBAdmin', [
 
             Iframe.addEvent("load", function () {
                 var IframeContent = Iframe.contentDocument || Iframe.contentWindow.document;
-                
+
                 var FA = new Element("link", {
                     href: URL_OPT_DIR + "bin/font-awesome/css/font-awesome.css",
                     rel : "stylesheet",
@@ -97,10 +89,7 @@ define('package/quiqqer/dbadmin/bin/backend/panel/DBAdmin', [
                     var oldHtml          = SelectItem.innerHTML;
                     SelectItem.innerHTML = "<span class='fa fa-eye' title='" + oldHtml + "'></span>";
                 }
-
-
             });
         }
-
     });
 });
