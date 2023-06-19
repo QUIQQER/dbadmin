@@ -4,8 +4,8 @@
           name="dbadmin"
           require="package/quiqqer/dbadmin/bin/backend/panel/DBAdmin"
           icon="fa fa-database"
+          permission="quiqqer.dbadmin.access"
     >
         <locale group="quiqqer/dbadmin" var="panel.title"/>
     </item>
-
 </menu>
