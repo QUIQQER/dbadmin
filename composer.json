@@ -15,7 +15,6 @@
     "email": "support@pcsg.de",
     "url": "http:\/\/www.pcsg.de"
   },
-  "require": [],
   "autoload": {
     "psr-4": {
       "QUI\\DBAdmin\\": "src\/QUI\/DBAdmin"
