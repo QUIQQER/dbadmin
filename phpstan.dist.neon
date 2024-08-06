@@ -5,4 +5,6 @@ parameters:
     level: 8
     paths:
         - src
+    excludePaths:
+        - src/QUI/DBAdmin/QUIAdminer.php
     tipsOfTheDay: false
