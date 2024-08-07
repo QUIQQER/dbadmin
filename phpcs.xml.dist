@@ -20,4 +20,7 @@
 
     <!-- Scan everything in the current folder -->
     <file>.</file>
+
+    <!-- Ignore lib/ directory -->
+    <exclude-pattern>lib/*</exclude-pattern>
 </ruleset>
