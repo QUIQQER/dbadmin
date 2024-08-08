@@ -1,0 +1,12 @@
+includes:
+	- phpstan-baseline.neon
+
+parameters:
+    level: 5
+    paths:
+        - src
+    excludePaths:
+        - src/QUI/DBAdmin/QUIAdminer.php
+    bootstrapFiles:
+        - tests/phpstan-bootstrap.php
+    tipsOfTheDay: false
